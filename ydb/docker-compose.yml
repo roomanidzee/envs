@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  ydb-local:
+    image: ydbplatform/local-ydb:latest
+    container_name: ydb-local
+    hostname: localhost
+    ports:
+      - "2135:2135"
+      - "2136:2136"
+      - "8765:8765"
